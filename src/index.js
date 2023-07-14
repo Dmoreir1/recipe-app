@@ -10,7 +10,7 @@ const app = express ();
 app.use(express.json()); 
 app.use(cors()); 
 
-app.use("/auth", userRouter);
+app.use("/auth", userRouter); 
 
 mongoose.connect("mongodb+srv://dmoreira:REiXLg9RYahiMlyL@cluster3.vxq7p7m.mongodb.net/?retryWrites=true&w=majority");
 
